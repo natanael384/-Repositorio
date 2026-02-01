@@ -1,0 +1,201 @@
+body{
+
+background-color: hsl(356, 100%, 90%) ;
+}
+
+
+
+/*=== HEADER ===*/
+header {
+  position: fixed;              /* fijo arriba */
+  top: 0;
+  left: 0;
+  width: 78rem;                  /* ocupa toda la pantalla */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(356, 87%, 94%);
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  width: 80px;
+  height: auto;
+  background: transparent;
+}
+
+/* MENU */
+.menu {
+   position: absolute;
+   right: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #7a2e3a;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.menu a:hover {
+  color: #c94a6a;
+  font-size: 22px; /* antes estaba mal */
+}
+
+/*=== SECCION DESCUENTO ===*/
+.descuento {
+   position: relative;
+  margin-top: 120px; /* espacio por el header fijo */
+  background-image: url("../img/muñeco de nieve.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.informacion {
+  align-items: center;
+  border: 3px solid rgba(255, 255, 255, 0.57);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  text-align: center;
+  color: rgb(255, 4, 4);
+  max-width: 80%;
+
+}
+
+/* informacion de la tabla*/
+.tabla-info {
+  margin: 40px auto;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-info td {
+  width: 50%;
+  vertical-align: middle;
+}
+
+/* TEXTO */
+.texto {
+  background-color: rgb(210, 109, 109);
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* IMAGEN */
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* === SECCIÓN VALUES === */
+.values {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 40px;
+  flex-wrap: wrap; /* baja las cards si no caben */
+}
+
+/* === TARJETAS === */
+.card {
+  width: 273px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* IMÁGENES */
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* === FOOTER === */
+.footer {
+   position: relative;
+   left: 0;
+  background-color: #fde2e4;
+  color: #7a2e3a;
+  width: 100%;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #c94a6a;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #7a2e3a;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #c94a6a;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #c94a6a;
+  padding-top: 15px;
+  font-size: 14px;
+}
+

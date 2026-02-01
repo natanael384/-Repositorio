@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("./img/࿇┊𝑮𝒊𝒚𝒖\ 𝑻𝒐𝒎𝒊𝒐𝒌𝒂.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.mensaje {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1f6391;
+    font-size: 16px;
+}
+
+.resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #2c3e50;
+}

@@ -1,0 +1,189 @@
+body{
+
+background-color: hsl(356, 100%, 90%) ;
+}
+
+/*=== HEADER ===*/
+header {
+  position: fixed;              /* fijo arriba */
+  top: 0;
+  left: 0;
+  width: 78rem;                  /* ocupa toda la pantalla */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(356, 87%, 94%);
+  z-index: 1000;
+}
+
+/* LOGO */
+.logo img {
+  width: 80px;
+  height: auto;
+  background: transparent;
+}
+
+/* MENU */
+.menu {
+   position: absolute;
+   right: 200px;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #7a2e3a;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.3s, font-size 0.3s;
+}
+
+.menu a:hover {
+  color: #c94a6a;
+  font-size: 22px; /* antes estaba mal */
+}
+
+
+
+/* === APARTADO PEDIDOS === */
+.pedidos {
+  padding: 80px 20px;
+  background-color: hsl(356, 87%, 96%);
+}
+
+.pedidos-contenido {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.pedidos h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #7a2e3a;
+}
+
+.pedidos-desc {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* FORMULARIO */
+.form-pedidos {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.grupo label {
+  margin-bottom: 6px;
+  color: #7a2e3a;
+  font-weight: bold;
+}
+
+.grupo input,
+.grupo select,
+.grupo textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.grupo textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* BOTÓN */
+.form-pedidos button {
+  width: 100%;
+  padding: 14px;
+  background-color: #c94a6a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-pedidos button:hover {
+  background-color: #a93c56;
+}
+
+
+/* === FOOTER === */
+.footer {
+   position: relative;
+   left: 0;
+  background-color: #fde2e4;
+  color: #7a2e3a;
+  width: 100%;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #c94a6a;
+}
+
+.footer-section p {
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #7a2e3a;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #c94a6a;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #c94a6a;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
